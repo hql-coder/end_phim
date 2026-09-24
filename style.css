@@ -1,0 +1,79 @@
+/* ===== RESET & CƠ BẢN ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* ===== NỀN SAO ===== */
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #000 100%);
+}
+
+/* ===== CREDIT ===== */
+.credits {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    animation: scrollUp 30s linear infinite;
+}
+
+/* ===== TIÊU ĐỀ ===== */
+.intro h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.intro p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 60px;
+}
+
+/* ===== SECTION ===== */
+.credit-section {
+    margin-bottom: 50px;
+}
+
+.credit-section h2 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.person span {
+    display: block;
+    font-size: 1.3rem;
+    margin: 8px 0;
+    letter-spacing: 1px;
+}
+
+/* ===== HIỆU ỨNG CUỘN ===== */
+@keyframes scrollUp {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
